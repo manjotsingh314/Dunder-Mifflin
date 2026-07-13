@@ -1,30 +1,14 @@
 document.getElementById("loginForm")
-.addEventListener("submit",function(e){
+.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-e.preventDefault();
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-const username =
-document.getElementById("username").value;
-
-const password =
-document.getElementById("password").value;
-
-if(
-username === "admin" &&
-password === "admin123"
-){
-localStorage.setItem(
-"isLoggedIn",
-"true"
-);
-
-```
-window.location.href =
-  "dashboard.html";
-```
-
-}
-else{
-alert("Invalid username or password.");
-}
+  if (username === "admin" && password === "admin123") {
+    localStorage.setItem("isLoggedIn", "true");
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Invalid username or password.");
+  }
 });
