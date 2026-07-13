@@ -1,3 +1,5 @@
+console.log("auth.js loaded");
+
 document.getElementById("loginForm")
 .addEventListener("submit", function (e) {
   e.preventDefault();
