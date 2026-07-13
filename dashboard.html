@@ -1,76 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dunder Mifflin Employee Management System</title>
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
 <body>
-  <div class="sidebar">
-    <h2>Dunder Mifflin EMS</h2>
 
-    <ul>
-      <li><a href="dashboard.html">🏠 Dashboard</a></li>
-      <li><a href="employees.html">👨‍💼 Employees</a></li>
-      <li><a href="attendance.html">📅 Attendance</a></li>
-      <li><a href="leave.html">📝 Leave</a></li>
-      <li><a href="payroll.html">💰 Payroll</a></li>
-      <li><a href="analytics.html">📊 Analytics</a></li>
-    </ul>
+    <!-- Sidebar -->
 
-    <button id="logoutBtn">
-      Logout
-    </button>
-  </div>
+    <div class="sidebar">
 
-  <div class="content">
-
-    <h1>
-      Welcome, Admin 👋
-    </h1>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Total Employees</h3>
-        <h2 id="employeeCount">0</h2>
-      </div>
-
-      <div class="card">
-        <h3>Present Today</h3>
-        <h2 id="presentCount">0</h2>
-      </div>
-
-      <div class="card">
-        <h3>On Leave</h3>
-        <h2 id="leaveCount">0</h2>
-      </div>
-
-      <div class="card">
-        <h3>Monthly Payroll</h3>
-        <h2 id="payrollCount">$0</h2>
-      </div>
-
-    </div>
-
-    <div class="dashboard-grid">
-
-      <div class="panel">
-        <h2>🔔 Notifications</h2>
-
-        <ul id="notifications">
-          <li>System initialized.</li>
-          <li>No new leave requests.</li>
-          <li>Payroll generation pending.</li>
-        </ul>
-      </div>
-
-      <div class="panel">
-        <h2>📰 Recent Activities</h2>
+        <h2>
+            Dunder Mifflin EMS
+        </h2>
 
         <ul>
-          <li>Dashboard created.</li>
-          <li>Admin logged in.</li>
-          <li>Employee module coming soon.</li>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="employees.html">
+                    <i class="fa-solid fa-users"></i>
+                    Employees
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="leave.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Leave
+                </a>
+            </li>
+
+            <li>
+                <a href="payroll.html">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Analytics
+                </a>
+            </li>
+
         </ul>
-      </div>
+
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
 
     </div>
 
-  </div>
+    <!-- Main Content -->
 
-  <script src="js/app.js"></script>
+    <div class="content">
+
+        <h1>
+            Welcome, Admin 👋
+        </h1>
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Total Employees</h3>
+
+                <h2 id="employeeCount">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Present Today</h3>
+
+                <h2 id="presentCount">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>On Leave</h3>
+
+                <h2 id="leaveCount">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Monthly Payroll</h3>
+
+                <h2 id="payrollCount">
+                    $0
+                </h2>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Panels -->
+
+        <div class="dashboard-grid">
+
+            <div class="panel">
+
+                <h2>
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </h2>
+
+                <ul id="notifications">
+
+                    <li>System initialized successfully.</li>
+
+                    <li>No new leave requests.</li>
+
+                    <li>Payroll generation pending.</li>
+
+                    <li>17 demo employees loaded.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="panel">
+
+                <h2>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Recent Activities
+                </h2>
+
+                <ul>
+
+                    <li>Admin logged in.</li>
+
+                    <li>Dashboard loaded.</li>
+
+                    <li>Attendance module ready.</li>
+
+                    <li>Payroll module initialized.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Dashboard JavaScript -->
+
+    <script src="js/app.js"></script>
+
 </body>
+
+</html>
